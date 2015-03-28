@@ -18,8 +18,8 @@ $mail->Host = "smtp.gmail.com";
 $mail->Port = 465;
  
 //Nuestra cuenta
-$mail->Username ='fredyalejandromoreno@gmail.com';
-$mail->Password = 'A1030570356MC'; //Su password
+$mail->Username ='micorreo@gmail.com';
+$mail->Password = 'xxxxxxx'; //Su password
  
 //Agregar destinatario
 $mail->AddAddress($para);
