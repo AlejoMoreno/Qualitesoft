@@ -1,0 +1,86 @@
+<html>
+	<head> <title> Formulario </title> </head>
+
+	<body bgcolor="white">
+
+<center> Auditor&iacute;as </center> 
+
+
+	<center> <table border="1" width="80%"> 
+
+
+<tr>
+	<td colspan="2"> Auditor&iacute;a # <input type="number" name="auditoria" size="20">  </td>
+
+	<td colspan="2"> Empresa <select name="empresa" size 1> <br>
+	<option> Entidad A
+	<option> Entidad B
+	<option> Entidad C
+	<option> Entidad D
+	</select>
+	</td>
+
+	<td colspan="2"> Alcance: </p>
+	<textarea rows="6x" cols="40" name="alcance" > 
+	</textarea>
+	</td>
+
+</tr>
+
+
+
+<tr>
+	<td colspan="2"> Usuario <input type="text" name="usuario" size="20"> </td>
+
+	<td colspan="2"> Hora inicio: <input type="time" name="hora" step="1"> </td>
+
+	<td colspan="2"> Criterio <select name="criterio" size 1> <br>
+	<option> Criterio A
+	<option> Criterio B
+	<option> Criterio C
+	<option> Criterio D
+	</select>
+	</td>
+
+	<td colspan="2"> Aceptado <input type="checkbox" name="informacion" value="Aceptado"></td>
+</tr>
+
+
+
+<tr>
+	<td colspan="2"> Calendario <input type="date" name="calendario" step="1" min="2015-01-01" max="2015-12-31" value="2015-01-01"> </td>
+
+	<td colspan="2"> Hora final: <input type="time" name="hora" step="1"> </td>
+
+	<td colspan="2"> Actividades: </p>
+	<textarea rows="6x" cols="40" name="actividad" > 
+	</textarea>
+	</td>
+
+	<td colspan="2"> Auditor <input type="text" name="auditor" size="20">  </td>
+</tr>
+
+
+<tr>
+	<td colspan="2"> </td>
+
+	<td colspan="2"> Objetivo: </p>
+	<textarea rows="6x" cols="40" name="objetivo" > 
+	</textarea>
+	</td>
+</tr>
+
+
+<tr>
+	<td colspan="3"> <center> <button type="submit" onclick="alert('La informaci&oacute;n ha sido enviada')"> Enviar </button> </center> </td>
+	<td colspan="2"> <center> <button type="button" value="text"> Observar </center> </td>
+	<td colspan="3"> <center> <button type="reset" value="reset"> Limpiar </button> 
+	</center> </td> 
+</tr>
+
+
+	</table> </center>
+
+	</body>
+
+</html>
