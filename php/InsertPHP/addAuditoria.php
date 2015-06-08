@@ -28,8 +28,7 @@ if(isset($_POST['guardar'])) {
     "'$alcance', '$criterio', '$actividad', '$aceptado', '$auditor');";
 
   $result = mysql_query($sql);
-  echo "¡Gracias! Hemos recibido sus datos.\n";
-  $conn->close();
+  echo '<script language="javascript">alert(" Se ha registrado correctamente"); document.location =("/php/ingenium/html/auditoria.php"); </script>';
 }
 else{
 } //end if
@@ -45,20 +44,20 @@ if(isset($_POST['observar'])) {
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
-    echo "<table>
+    echo "<table border=1>
     <tr>
-      <td width='150'>auditoria</td>  
-      <td width='150'>usuario</td>  
-      <td width='150'>empresa</td>
-      <td width='150'>confirmadofecha</td>
-      <td width='150'>horainicio</td>
-      <td width='150'>horafinal</td>
-      <td width='150'>objetivo</td>
-      <td width='150'>alcance</td>
-      <td width='150'>criterio</td>
+      <td width='150'>Auditoria</td>  
+      <td width='150'>Usuario</td>  
+      <td width='150'>Empresa</td>
+      <td width='150'>Confirmadofecha</td>
+      <td width='150'>Horainicio</td>
+      <td width='150'>Horafinal</td>
+      <td width='150'>Objetivo</td>
+      <td width='150'>Alcance</td>
+      <td width='150'>Criterio</td>
       <td width='150'>Actividades</td>
-      <td width='150'>vistobueno</td>
-      <td width='150'>usuario_auditor</td>
+      <td width='150'>Vistobueno</td>
+      <td width='150'>Usuario_auditor</td>
     </tr>";
     while($row = $result->fetch_assoc()){
       echo "

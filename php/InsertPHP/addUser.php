@@ -33,7 +33,7 @@ if(isset($_POST['registrer'])) {
 "NULL ,  '$nombre',  '$empresa',  '$telefono',  '$correo',  '$usuario',  '$pass',  '1',  '$apellido',  '$cargo');";
 
   $result = mysql_query($sql);
-  echo "¡Gracias! Hemos recibido sus datos.\n";
+  echo '<script language="javascript">alert(" Registro correcto"); document.location =("/php/ingenium/html/index.php"); </script>';
   $conn->close();
 }else{
     } //end if

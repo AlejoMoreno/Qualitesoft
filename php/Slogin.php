@@ -20,16 +20,14 @@ if ($LUsuario) {
             //echo "nombre: " . $row["nombre"]. " - Pass: " . $row["pass"]. "<br>";
           }
           else{
-            echo "<script>alert('Validacion invalida'); document.location=('../logout.php');</script>";
             $count=$count+1;
           }
       }
     } else {
-        echo "<script>alert('Tabla de usuarios vacia'); document.location=('../logout.php');</script>";
+        echo "<script>alert('Tabla de usuarios vacia'); document.location=('/php/ingenium/html/menu.php');</script>";
   }
-  if($count>0)
-        echo "<script>alert('Validacion invalida'); document.location=('../logout.php');</script>";
   $conn->close();
+  echo "<script>alert('Tabla de usuarios vacia'); document.location=('logout.php');</script>";
 }
 //**********************************************+validacion de correo email******************************************************++
 if ($FUsuario) {

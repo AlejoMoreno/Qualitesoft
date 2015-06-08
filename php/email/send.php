@@ -13,13 +13,13 @@ $archivo = $_FILES['hugo'];
 $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->SMTPAuth = true;
-//$mail->SMTPSecure = "ssl";
-$mail->Host = "smtp.gmail.com";
-$mail->Port = 465;
+$mail->SMTPSecure = "ssl"; 
+$mail->Host = 'smtp.live.com';
+$mail->Port = 587;
  
 //Nuestra cuenta
-$mail->Username ='micorreo@gmail.com';
-$mail->Password = 'xxxxxxx'; //Su password
+$mail->Username ='fredymc-9@hotmail.com';
+$mail->Password = 'A1030570356mc'; //Su password
  
 //Agregar destinatario
 $mail->AddAddress($para);
