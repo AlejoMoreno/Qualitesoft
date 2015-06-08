@@ -1,0 +1,26 @@
+pasos a seguir para la instalación de mailer en BIGDATA
+1.Traer la estructura de la base de datos.
+2.Traer la tabla de usuarios.
+3.Nombre de la base de datos mailerdb
+4.Instalar maincatch
+5.restart apache
+6.Crear carpeta mnt/facturas y poner chmod -r 777
+7.documentar la linea de código de base de datos.
+
+///////////////////////////////////////////////////////////////
+
+Edificio de ingenieria 453 aula de ingenieria lunes 2:30 resumen de la propuesta con avances
+
+///////////////////////////////////////////////////////////////
+
+hace relaciones entre las variables de los distintos factores.
+Análisis de correlaciones: un análisis de componentes principales tiene sentido si existen altas correlaciones entre las variables,
+ya que es información redundante.
+Selección de los factores: Recoger la mayor proporción de la variabilidad original (que no sean repetidos). Del total se escojen los
+mayores porcentajes de variabilidad que se considere.
+Análisis de la matriz factoria: Se realiza una matriz con los componentes principales. columnas = componentes, filas=variables.
+Interpretación de factores: Los coeficientes deben ser proximos a 1 una variable debe tener coeficientes elevados solo con un factor
+no deben existir factores con coeficientes similares.
+
+//////////////////////////////////////////////////////////////////
+
